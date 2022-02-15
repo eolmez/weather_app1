@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
         .then((response) => response.json())
         .then((data) => {
           //console.log(data);
-          temperatureDegree.textContent = data.main.temp;
+          temperatureDegree.textContent = Math.round(data.main.temp);
           description.textContent = data.weather[0].main;
           cityCountry.textContent = `${data.name}, ${data.sys.country}`;
           const addImage = () => {
