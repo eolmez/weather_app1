@@ -29,7 +29,5 @@ window.addEventListener("load", () => {
           addImage();
         });
     });
-  } else {
-    alert("To view the weather, you must allow location services.");
   }
 });
